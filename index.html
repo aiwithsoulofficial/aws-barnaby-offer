@@ -503,7 +503,7 @@ html,body{overflow-x:clip;margin:0;background:#E4DDD3!important;}
   var CONTRACT_ID='cd16fe9f-5112-4573-bb64-e2a81bc83423', TOKEN='33a92b8e5892e3404d9183a3c082dcd0';
 
 
-  // hero animation: loop steps 1-5 only (step 6 shows Google Ads - Meta only for Kelly; the end card is workshop-specific)
+  // hero animation: loop steps 1-5 only (Meta ads only; the end card is workshop-specific)
   var hv=document.getElementById('heroAnim');
   if(hv){hv.addEventListener('timeupdate',function(){if(hv.currentTime>16.8){hv.currentTime=0;hv.play().catch(function(){})}});hv.play().catch(function(){});}
   document.querySelectorAll('.loopVid').forEach(function(v){new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting)v.play().catch(function(){});else v.pause()})},{threshold:.3}).observe(v)});
