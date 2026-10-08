@@ -270,8 +270,8 @@ html,body{overflow-x:clip;margin:0;background:#E4DDD3!important;}
     <a class="bi-btn bi-r" href="#offer">See everything you get</a>
   </div>
   <div class="bi-anim bi-r">
-    <div class="frame"><video id="heroAnim" src="https://assets.cdn.filesafe.space/3NQ1lHhzjQ1IaCZqYIAA/media/70a403c4-eb14-4c7d-9a1e-26541ded614e.mp4" muted playsinline autoplay preload="auto" aria-label="Animation: the six steps that build your system, starting with your Business Brain"></video></div>
-    <p class="cap">The six pieces we put in over your 30 days.</p>
+    <div class="frame"><video id="heroAnim" src="https://assets.cdn.filesafe.space/3NQ1lHhzjQ1IaCZqYIAA/media/70a403c4-eb14-4c7d-9a1e-26541ded614e.mp4" muted playsinline autoplay preload="auto" aria-label="Animation: how your system gets built, starting with your Business Brain"></video></div>
+    <p class="cap">How your system gets built over the 30 days.</p>
   </div>
 </div></section>
 
@@ -503,9 +503,9 @@ html,body{overflow-x:clip;margin:0;background:#E4DDD3!important;}
   var CONTRACT_ID='cd16fe9f-5112-4573-bb64-e2a81bc83423', TOKEN='33a92b8e5892e3404d9183a3c082dcd0';
 
 
-  // hero animation: loop the six install steps only (the end card is workshop-specific)
+  // hero animation: loop steps 1-5 only (step 6 shows Google Ads - Meta only for Kelly; the end card is workshop-specific)
   var hv=document.getElementById('heroAnim');
-  if(hv){hv.addEventListener('timeupdate',function(){if(hv.currentTime>20.4){hv.currentTime=0;hv.play().catch(function(){})}});hv.play().catch(function(){});}
+  if(hv){hv.addEventListener('timeupdate',function(){if(hv.currentTime>16.8){hv.currentTime=0;hv.play().catch(function(){})}});hv.play().catch(function(){});}
   document.querySelectorAll('.loopVid').forEach(function(v){new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting)v.play().catch(function(){});else v.pause()})},{threshold:.3}).observe(v)});
   // reveal on scroll
   var els=document.querySelectorAll('.bi-r');
